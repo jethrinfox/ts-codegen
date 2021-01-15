@@ -4,13 +4,9 @@
 	"description": "TypeScript boilerplate code generator for NodeJS Projects in general.",
 	"main": "src/index.ts",
 	"scripts": {
-		"start": "node dist/index.js",
-		"start2": "ts-node src/index.ts",
-		"dev": "nodemon dist/index.js",
-		"dev2": "nodemon --exec ts-node src/index.ts",
-		"build": "tsc",
-		"watch": "tsc -w",
-		"build-script": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist"
+		"start": "ts-node src/index.ts",
+		"dev": "nodemon --exec ts-node src/index.ts",
+		"build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist"
 	},
 	"repository": {
 		"type": "git",
@@ -34,6 +30,7 @@
 		"@types/ejs": "^3.0.5",
 		"@types/inquirer": "^7.3.1",
 		"@types/node": "^14.14.20",
+		"@types/shelljs": "^0.8.8",
 		"nodemon": "^2.0.7",
 		"shx": "^0.3.3",
 		"ts-node": "^9.1.1",
@@ -41,7 +38,8 @@
 	},
 	"dependencies": {
 		"ejs": "^3.1.5",
-		"inquirer": "^7.3.3"
+		"inquirer": "^7.3.3",
+		"shelljs": "^0.8.4"
 	},
 	"bin": {
 		"template-generator": "./dist/index.js"

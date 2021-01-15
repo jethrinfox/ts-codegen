@@ -118,7 +118,7 @@ function postProcess(options: CliOptions) {
 	);
 	if (isNode) {
 		shell.cd(options.targetPath);
-		const result = shell.exec("npm install");
+		const result = shell.exec("yarn");
 		if (result.code !== 0) {
 			return false;
 		}

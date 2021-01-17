@@ -1,6 +1,6 @@
 {
-	"name": "ts-codegen",
-	"version": "0.1.0",
+	"name": "ts-boiler-code",
+	"version": "0.1.1",
 	"description": "TypeScript boilerplate code generator for NodeJS Projects in general.",
 	"main": "src/index.ts",
 	"scripts": {
